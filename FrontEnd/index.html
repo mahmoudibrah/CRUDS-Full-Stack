@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> CRUD wiht Sql and node.js </title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="cruds">
+        <div class="container">
+            <div class="head d-flex align-items-center flex-column my-3">
+                <h1 class="ml9">
+                    <span class="text-wrapper">
+                      <span class="letters">Dukan Store</span>
+                    </span>
+                  </h1>
+                <!-- <h1> Dukan Store  <i class="fa-solid fa-store"></i></h1> -->
+                <h3>CRUDS Operation With Node.js API</h3>
+                <P>PRODUCT MANAGEMENT SYSTEM</P>
+            </div>
+            <div class="inputs my-3">
+                <div class="group group-title my-3">
+                    <input type="text" placeholder="Title" id="title" class="form-control">
+                </div>
+                <div class="group group-price d-flex align-items-center gap-2">
+                    <input type="number" placeholder="Price" id="price" class="form-control">
+                    <input type="number" placeholder="Taxes" id="taxes" class="form-control">
+                    <input type="number" placeholder="Ads" id="ads" class="form-control">
+                    <input type="number" placeholder="Discount" id="discount" class="form-control">
+                    <span id="total" class="text-white p-2 rounded-3"></span>
+                </div>
+                <div class="group group-count my-3">
+                    <input type="number" placeholder="Count" id="count" class="form-control">
+                </div>
+                <div class="group group-Category my-3">
+                    <input type="text" placeholder="Category" id="category" class="form-control">
+                </div>
+                <button id="submit" class="btn btn-success w-100">Create</button>
+            </div>
+            <div class="outputs my-3">
+                <div class="searchBlock">
+                    <input type="text" placeholder="Search By Title OR Category" id="search" class="form-control">
+                </div>
+                <div id="numberOfProducts" class=" my-4 d-flex justify-content-center align-items-center mx-auto"></div>
+                <table class="table  table-success table-striped ">
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="js/master.js"></script>
+
+</body>
+
+</html>
+
+</html>
